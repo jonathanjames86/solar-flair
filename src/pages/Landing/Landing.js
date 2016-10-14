@@ -2,33 +2,40 @@ import React from "react";
 import { Link } from "react-router";
 
 class Landing extends React.Component{
-
   render(){
-    const headerContainer = {width: "100vw",height: "75vh",backgroundColor: "#4D8DF6", display:"flex"};
-    const headerText = {width: "50%", height: "65%", fontSize: "2rem",color: "#fff", textAlign: "center", paddingTop: "25vh"};
-    const btn = {width: "10rem", height:"3rem", margin:"1rem",backgroundColor:"#fff", color:"#4D8DF6", border:"1px solid #fff", fontSize: "1.25rem"};
-    const btn2 = {width: "10rem", height:"3rem", backgroundColor:"#4D8DF6", color:"#fff", border:"1px solid #fff", fontSize: "1rem"};
-    const headerImage = {width:"50%", height:"100%", backgroundImage: "url('http://www.mobiloitte.com/blog/wp-content/uploads/2016/07/ionic-vs-react-native.png')", backgroundSize: "cover", backgroundPosition: "center"};
-    const secText = {fontSize: "1rem", marginTop: "1rem", marginBottom:"2rem"};
+    const navBar = {width:"95vw", height:"2.5rem", margin:'auto', color:"#fff"};
+    const logo = {width:'15rem', height:"150%", backgroundColor:"#2b2b2b", float: "left", cursor:"pointer"};
+    const menu = {width:'35rem', height:"100%",  float:"right", display:"flex"};
+    const menuItems = {width:"50%", height:"100%", display:"flex", justifyContent:"space-between", alignItems:"center"};
+    const menuItem = {fontSize:".75rem", color:"#fff", letterSpacing:"2px", fontWeight:"bolder", cursor:"pointer"};
+    const mainText = {width:"60%", height:"25vh", margin:"auto", paddingTop:"14.5%", fontSize:"3rem", letterSpacing:"3px", fontWeight:"bolder", color:"#fff", textAlign:"center"}
+    const infoSection = {width:"100%", height:"80vh"};
+    const points = {width:"60%", height:"20rem", margin:"auto"};
 
     return(
-      <div style={headerContainer}>
-        <div style={headerText}>
-          Ionic 2 and React Native
-          <br />
-          <div style={secText}>
-            A two week out of the box experiment, resource and project
-            <br />
-             by and for JR Developers
-            <br />
-          </div>
-            <Link to="data"><button className="a" style={btn}>My Project</button></Link>
-            <Link to="resources"><button className="a" style={btn2}>Resources</button></Link>
-      </div>
-            <div style={headerImage}>
+      <div>
+        <div className="header">
+          <div style={navBar}>
+            <div style={logo}>LOGO HERE</div>
+            <div style={menu}>
+              <div style={menuItems}>
+                <div style={menuItem}>HOME</div>
+                <div style={menuItem}>ABOUT SOLAR</div>
+                <div style={menuItem}>BLOG</div>
+              </div>
+              <div className="lowerBill"> LOWER YOUR POWER BILL
+              </div>
             </div>
-    </div>
-
+          </div>
+          <div style={mainText}>SMART, EASY, AFFORDABLE&#46;
+            <div className="cta">FREE QUOTE</div>
+          </div>
+        </div>
+        <div style={infoSection}>
+          <div style={points}>
+          </div>
+        </div>
+      </div>
 
     )
   }

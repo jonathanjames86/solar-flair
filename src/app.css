@@ -1,0 +1,57 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:#fff;
+    margin: 0;
+    height: 100%;
+    letter-spacing:
+}
+.header {
+  width: 100vw;
+  height: 80vh;
+  background-image: url('http://www.motherearthliving.com/~/media/Images/MEL/Editorial/Articles/Magazine%20Articles/2012/01-01/Rooftop%20Revolution%20An%20Update%20on%20Residential%20Solar%20Energy/Rooftop%20Solar%20Panels.jpg?h=600&la=en&w=900&hash=0CE85FA3D3D922C62ED2BEBF66F26A741CC8D43A');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-blend-mode: overlay;
+  background-color: #4A525F;
+  padding-top: 3rem;
+}
+
+.lowerBill{
+  height: 100%;
+  width:45%;
+  border-radius: 25px;
+  margin-left: 1.5rem;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .75rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: background-color .4s, color .4s;
+}
+.lowerBill:hover{
+ background-color: #fff;
+ color: #000;
+ cursor:pointer;
+}
+
+.cta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin:auto;
+  color: #fff;
+  font-size: .9rem;
+  margin-top: 2.75rem;
+  width: 12rem;
+  height: 3rem;
+  background-color: #41BBF9;
+  transition: background-color .4s;
+}
+.cta:hover {
+  cursor: pointer;
+  background-color: #3A7490;
+}
